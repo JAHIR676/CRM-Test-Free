@@ -7,13 +7,19 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.TestUtilities;
+import utilities.WebEventListner;
 
 public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
+	@SuppressWarnings("deprecation")
+	public static EventFiringWebDriver eventDriver;
+	public static WebEventListner eventListener;
+	
 
 	public TestBase() {
 
@@ -42,6 +48,13 @@ public class TestBase {
 		} else if (browser.equals("Edge")) {
 			driver = WebDriverManager.edgedriver().create();
 		}
+		
+		eventDriver = new EventFiringWebDriver(driver);
+		// Now create object of EventListerHandler to register it with EventFiringWebDriver
+		eventListener = new WebEventListner();
+		eventDriver.register(eventListener);
+		driver = eventDriver;
+		
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

@@ -9,11 +9,40 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">101,599</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">6</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">95,248</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">testFreeCRM.HomePageTest</td><td><a href="#m0">companyNameTest</a></td><td rowspan="1">1665337412696</td><td rowspan="1">2808</td></tr><tr class="passedeven"><td><a href="#m1">homeMoveTest</a></td><td rowspan="1">1665337426251</td><td rowspan="1">2023</td></tr><tr class="passedeven"><td><a href="#m2">logoTest</a></td><td rowspan="1">1665337399306</td><td rowspan="1">2250</td></tr><tr class="passedeven"><td><a href="#m3">titleTest</a></td><td rowspan="1">1665337387052</td><td rowspan="1">49</td></tr><tr class="passedodd"><td rowspan="3">testFreeCRM.LoginPageTest</td><td><a href="#m4">alllinkTest</a></td><td rowspan="1">1665337442194</td><td rowspan="1">5096</td></tr><tr class="passedodd"><td><a href="#m5">loginTest</a></td><td rowspan="1">1665337454202</td><td rowspan="1">4214</td></tr><tr class="passedodd"><td><a href="#m6">titleTest</a></td><td rowspan="1">1665337435379</td><td rowspan="1">15</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testFreeCRM.HomePageTest</td><td><a href="#m0">companyNameTest</a></td><td rowspan="1">1665425877632</td><td rowspan="1">20278</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">testFreeCRM.HomePageTest</td><td><a href="#m1">homeMoveTest</a></td><td rowspan="1">1665425910127</td><td rowspan="1">1043</td></tr><tr class="passedeven"><td><a href="#m2">logoTest</a></td><td rowspan="1">1665425864241</td><td rowspan="1">1029</td></tr><tr class="passedeven"><td><a href="#m3">titleTest</a></td><td rowspan="1">1665425855158</td><td rowspan="1">28</td></tr><tr class="passedodd"><td rowspan="3">testFreeCRM.LoginPageTest</td><td><a href="#m4">alllinkTest</a></td><td rowspan="1">1665425922975</td><td rowspan="1">4624</td></tr><tr class="passedodd"><td><a href="#m5">loginTest</a></td><td rowspan="1">1665425932661</td><td rowspan="1">4528</td></tr><tr class="passedodd"><td><a href="#m6">titleTest</a></td><td rowspan="1">1665425917097</td><td rowspan="1">16</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">testFreeCRM.HomePageTest#companyNameTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">testFreeCRM.HomePageTest#companyNameTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//b[normalize-space()=&apos;BASETTI INDIA PVT LTD&apos;]&quot;}
+  (Session info: chrome=106.0.5249.103)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;TEST-DEVICE&apos;, ip: &apos;192.168.0.100&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26b7a6dd0e910d1a8792e518ea90634d, findElement {using=xpath, value=//b[normalize-space()=&apos;BASETTI INDIA PVT LTD&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.103, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\WINDOWS\TEMP\scoped_dir2...}, goog:chromeOptions: {debuggerAddress: localhost:11786}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:11786/devtoo..., se:cdpVersion: 106.0.5249.103, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 26b7a6dd0e910d1a8792e518ea90634d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at jdk.proxy2/jdk.proxy2.$Proxy11.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at pages.HomePage.companyName(HomePage.java:77)
+	at testFreeCRM.HomePageTest.companyNameTest(HomePageTest.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 41 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">testFreeCRM.HomePageTest#homeMoveTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m2">testFreeCRM.HomePageTest#logoTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">testFreeCRM.HomePageTest#titleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
