@@ -18,7 +18,7 @@ public class HomePage extends TestBase {
 	@FindBy(xpath = "//div[@class='header item']")
 	WebElement logo;
 
-	@FindBy(xpath = "//b[normalize-space()='BASETTI INDIA PVT LTD']")
+	@FindBy(xpath = "//b[normalize-space()='BASSETTI INDIA PVT LTD']")
 	WebElement companyName;
 
 	@FindBy(xpath = "//span[@class='user-display']")

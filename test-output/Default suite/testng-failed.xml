@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testFreeCRM.HomePageTest">
+      <class name="testFreeCRM.CalenderTest">
         <methods>
-          <include name="browserclosed"/>
+          <include name="closeBrowser"/>
           <include name="setup"/>
-          <include name="companyNameTest"/>
+          <include name="clickOnDate"/>
         </methods>
-      </class> <!-- testFreeCRM.HomePageTest -->
+      </class> <!-- testFreeCRM.CalenderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

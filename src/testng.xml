@@ -1,9 +1,13 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
-<suite name="Test Automation Free CRM">  
-<test name="Free CRM">  
-<classes>  
-<class name="testFreeCRM.HomePageTest"></class>
-<class name="testFreeCRM.LoginPageTest"></class>
-</classes>  
-</test>  
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Automation Free CRM">
+	<listeners>
+		<listener class-name="extentReport.ExtentReportListener" />
+	</listeners>
+	<test name="Free CRM">
+		<classes>
+			<class name="testFreeCRM.HomePageTest"></class>
+			<class name="testFreeCRM.LoginPageTest"></class>
+			<class name="testFreeCRM.CalenderTest"></class>
+		</classes>
+	</test>
 </suite>

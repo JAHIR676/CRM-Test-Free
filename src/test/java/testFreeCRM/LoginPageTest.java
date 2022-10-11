@@ -28,17 +28,17 @@ public class LoginPageTest extends TestBase {
 	}
 	
 	@Test(priority=1)
-	public void titleTest() {
+	public void loginTitleTest() {
 		String title = loginpage.title();
 		Assert.assertEquals(title, "Free CRM");
 	}
 	
 	@Test(priority=3)
-	public void loginTest() {
+	public void loginFunTest() {
 		homePage = loginpage.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	@Test(priority=3)
-	public void alllinkTest() {
+	public void allLinkTest() {
 		loginpage.linkInPage();
 	}
 	

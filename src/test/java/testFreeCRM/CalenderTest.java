@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,6 +20,7 @@ public class CalenderTest extends TestBase {
 	LoginPage loginpage;
 	HomePage homepage;
 	Calender calenderPage;
+	CalenderForm calenderform;
 
 	public CalenderTest() {
 		super();
@@ -34,7 +36,7 @@ public class CalenderTest extends TestBase {
 	}
 
 	@Test
-	public CalenderForm clickOnDate() {
+	public void clickOnDate() {
 		while (true) {
 			String monthYear = calenderPage.currentMonthYear();
 			String month = monthYear.split(" ")[0].trim();
@@ -57,9 +59,20 @@ public class CalenderTest extends TestBase {
 				break;
 			}
 		}
-		return new CalenderForm();
+
+		Assert.assertEquals(calenderform, "This Test failed");
+		
+		
 
 	}
+	
+	@Test
+	public void getCalenderPageTitle() {
+		String title = driver.getTitle();
+		System.out.println(title);
+		Assert.assertEquals(title, "Free CRM");
+	}
+	
 
 	@AfterMethod
 	public void closeBrowser() {
